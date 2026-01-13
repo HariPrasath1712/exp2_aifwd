@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Portal 2026</title>
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>KARUNYA INSTITUTE OF TECHNOLOGY AND SCIENCES</h2>
+    </header>
+
+    <div class="main-container">
+        <!-- Media Section -->
+        <section class="media-section">
+            <h3>Event Banner</h3>
+            <img src="C:\Users\urk23cs5058\Downloads\download.jpg" alt="Event Banner" class="banner-img">
+            
+            <h3>Promotional Video</h3>
+            <video controls>
+                <source src="movie.mp4" type="video/mp4">
+            </video> 
+
+            <h3>Intro Audio</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section class="form-section">
+            <h2>Register for Event</h2>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label>Full Name:</label>
+                    <input type="text" name="username" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="input-group">
+                    <label>Email:</label>
+                    <input type="email" name="useremail" placeholder="email@example.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Event Date:</label>
+                    <input type="date" name="eventdate">
+                </div>
+
+                <div class="input-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" name="gender" value="m"> Male
+                        <input type="radio" name="gender" value="f"> Female
+                    </div>
+                </div>
+                <input type="submit" value="Submit Registration" class="submit-btn">
+            </form>
+        </section>
+    </div>
+</body>
+</html>
