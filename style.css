@@ -1,0 +1,98 @@
+/* Basic Reset and Typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header {
+    background-color: #004a99;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Flexbox Layout for Main Container */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Section Styling */
+.media-section, .form-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+/* Media Elements */
+.banner-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+video {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Form Styling with Transitions */
+.input-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="email"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Transition for Focus Effect */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #004a99;
+    box-shadow: 0 0 8px rgba(0,74,153,0.2);
+    outline: none;
+}
+
+/* Button Styling with Transitions */
+.submit-btn {
+    background-color: #004a99;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #003366;
+    transform: translateY(-2px);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media-section, .form-section {
+        width: 95%;
+    }
+}
